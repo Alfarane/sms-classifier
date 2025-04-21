@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 1vmin);
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #3a3f4b;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: #f5f5f5;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.spam {
+  background-color: #ffcccc;
+  border: 1px solid #ff8080;
+  color: #d32f2f;
+}
+
+.ham {
+  background-color: #ccffcc;
+  border: 1px solid #80ff80;
+  color: #2e7d32;
+}
+
+.error-message {
+  color: #ff6b6b;
+  margin-top: 15px;
+}
+
+.prediction, .confidence {
+  margin: 10px 0;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #61dafb;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+}
